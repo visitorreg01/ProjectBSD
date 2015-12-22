@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.2.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -99,21 +101,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -157,9 +144,6 @@
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\CameraCustomInspector.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\MonoBehaviourCustomInspector.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\SplineDataHolderCustomInspector.cs" />
-    <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\WorldMapCustomInspector.cs" />
-    <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\WorldObjectBaseCustomInspector.cs" />
-    <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\00_EdCustom\WorldObjectsRegistryCustomInspector.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\01_EditorWindows\ScenesExplorer.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\02_PropertyDrawers\AqGuidPropertyDrawer.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\99_Utils\DrawHelper.cs" />
@@ -189,6 +173,9 @@
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\zz_ScriptableBlocks\ScriptableBlocksDrawable\01_Unity\SimpleBox.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\zz_ScriptableBlocks\ScriptableBlocksEd\01_Unity\ScriptableBlocksEdWindow.Input.cs" />
     <Compile Include="Assets\DsFrameworkRoot\Editor\90_DsFramework\zz_ScriptableBlocks\ScriptableBlocksEd\01_Unity\ScriptableBlocksEdWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Pro Standard Assets\DESC.TXT" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
